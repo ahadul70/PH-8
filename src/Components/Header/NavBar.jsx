@@ -36,7 +36,14 @@ const NavBar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <img
+          src="./assets/logo.png"
+          alt="logo"
+          className="w-10 h-10 object-contain"
+        />
+        <span className="font-semibold text-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+          HERO.IO
+        </span>
       </div>
 
       <div className="navbar-center hidden lg:flex">
@@ -44,8 +51,14 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <a
+          className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-4 py-2 rounded-md cursor-pointer"
+          onClick={() => window.open("https://github.com/ahadul70", "_blank")}
+        >
+      Contribute
+        </a>
       </div>
+      <></>
     </div>
   );
 };
