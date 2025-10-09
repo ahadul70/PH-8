@@ -1,20 +1,37 @@
-import React from 'react'
+import React from "react";
 
-export const Cards = () => {
+export const Cards = ({ app }) => {
   return (
-    <div className="border p-4 rounded-lg shadow-md w-60">
-      <img src="./assets/demo-app (1).webp" alt="app_image" />
-      <h1 className='font-bold'> Forest:Focus For Productivity</h1>
-      <div className="flex justify-between mt-2">
-        <button>
-          {" "}
-          <img src="./assets/icon-downloads.png" alt="downlods" /> 9M
+    <div className="border p-4 rounded-lg shadow-md w-60 mt-4 mb-4 ml-8 mr-8">
+      <img
+        src={app.image}
+        alt={app.title}
+        className="w-full h-40 object-cover rounded-md"
+      />
+      <h1 className="font-bold mt-2 text-lg">{app.title}</h1>
+      <p className="text-sm text-gray-600">{app.companyName}</p>
+      <p className="text-sm mt-1">{app.description.slice(0, 50)}...</p>
+
+      <div className="flex justify-between mt-3 items-center">
+        <button className="flex items-center gap-1">
+          <img
+            src="./assets/icon-downloads.png"
+            alt="downloads"
+            className="w-4 h-4"
+          />
+          {app.downloads >= 1000000
+            ? `${(app.downloads / 1000000).toFixed(1)}M`
+            : app.downloads}
         </button>
-        <button>
-          {" "}
-          <img src="./assets/icon-ratings.png" alt="rating" /> 5
+        <button className="flex items-center gap-1">
+          <img
+            src="./assets/icon-ratings.png"
+            alt="rating"
+            className="w-4 h-4"
+          />
+          {app.ratingAvg.toFixed(1)}
         </button>
       </div>
     </div>
   );
-}
+};
