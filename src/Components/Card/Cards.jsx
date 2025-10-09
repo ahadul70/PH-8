@@ -1,7 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { apps } from "../../Data";
 
 export const Cards = ({ app }) => {
-  return (
+    return (
+      
+        <Link to ={`/app/${app.id}`}>
     <div className="border p-4 rounded-lg shadow-md w-60 mt-4 mb-4 ml-8 mr-8">
       <img
         src={app.image}
@@ -33,5 +37,5 @@ export const Cards = ({ app }) => {
         </button>
       </div>
     </div>
-  );
+  </Link>);
 };
