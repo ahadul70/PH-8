@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { apps } from "../../Data";
 import addToLDB from "../../utility/addtoLDB";
+import { Charts } from "./Charts";
 
 export const App_dets = () => {
   const { id } = useParams();
@@ -81,7 +82,9 @@ export const App_dets = () => {
           </button>
         </div>
       </div>
-
+      <div className="mt-10">
+        <Charts appId={app.id} />
+      </div>
       <div className="mt-10">
         <h2 className="text-xl font-semibold mb-2">Description</h2>
         <p className="text-gray-700">{app.description}</p>

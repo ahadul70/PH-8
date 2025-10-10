@@ -36,15 +36,17 @@ const NavBar = () => {
           >
             {links}
           </ul>
-        </div>
+        </div>  <Link to='/'>
         <img
           src="./assets/logo.png"
           alt="logo"
           className="w-10 h-10 object-contain"
         />
+     
         <span className="font-semibold text-lg bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
           HERO.IO
-        </span>
+        </span></Link>
+
       </div>
 
       <div className="navbar-center hidden lg:flex">

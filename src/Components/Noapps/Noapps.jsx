@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Noapps = ({ onReset }) => {
   return (
-    <div>
+    <div className="justify-center items-center text-center mt-20">
       <img src="./assets/App-Error.png" alt="" />
 
       <Link to="/apps">
