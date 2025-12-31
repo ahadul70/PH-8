@@ -23,7 +23,11 @@ src/            # Source code
   ui/           # UI images
 ```
 
-
+### [Mini App Store](https://github.com/ahadul70/PH-8/edit/master/README.md)
+A platform to browse and access apps securely.  
+- **Tech Stack:** React, React Router, REST APIs, Authentication  
+- **Features:** Protected routes, dynamic app listings, scalable architecture  
+- **Status:** MVP deployed for testing  
 
 
 
