@@ -1,35 +1,42 @@
-# PH-8
+# Mini App Store
 
-A modern web application built with React and Vite.
+![Mini App Store Screenshot](https://i.postimg.cc/Hnr2HVkL/Hero-dev.png)
 
-## Features
+## 🔹 Description
+Mini App Store is a **web platform to browse and access applications securely**.  
+It allows users to **log in, explore available apps, and access apps based on their permissions**.  
 
-- Trending apps showcase
-- App details with charts
-- Installation management
-- Error pages and handling
-- Responsive UI with banners, cards, and stats
+**Live Project:** [View Live Project](https://moonlit-melba-680d30.netlify.app/)
 
-## Folder Structure
+---
 
-```
-assets/         # Images and icons
-public/         # Static public assets
-src/            # Source code
-  Components/   # Reusable UI components
-  Pages/        # Application pages
-  Routes/       # App routing
-  utility/      # Utility functions
-  ui/           # UI images
-```
+## 🛠️ Technologies Used
+- **Frontend:** React, React Router  
+- **Backend / APIs:** REST APIs  
+- **Authentication:** Firebase Auth or Custom Auth (if used)  
+- **Styling:** Tailwind CSS / CSS Modules  
 
-### [Mini App Store](https://github.com/ahadul70/PH-8/edit/master/README.md)
-A platform to browse and access apps securely.  
-- **Tech Stack:** React, React Router, REST APIs, Authentication  
-- **Features:** Protected routes, dynamic app listings, scalable architecture  
-- **Status:** MVP deployed for testing  
+---
 
+## ✨ Core Features
+- User authentication and protected routes  
+- Browse and search apps dynamically  
+- Role-based access (Admin/User)  
+- Clean, responsive UI for desktop and mobile  
+- Modular, reusable components for scalability  
 
+---
 
+## 📦 Dependencies
+- React  
+- React Router DOM  
+- Tailwind CSS  
+- Axios / Fetch (for REST API calls)  
+- Firebase (if used for Auth)  
 
+---
 
+## 💻 Getting Started (Run Locally)
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/yourgithub/mini-app-store.git
